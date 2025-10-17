@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SDG 1 — No Poverty | Sustainable Development Goals</title>
+  <meta name="description" content="A clean, accessible template focused on Sustainable Development Goal 1: No Poverty. Use this scaffold to share stats, stories, projects and calls to action." />
+
+  <style>
+    :root{
+      --primary:#0b6e4f; /* deep green */
+      --accent:#ffb703;  /* warm gold */
+      --muted:#6b7280;
+      --bg:#f7f9fb;
+      --card:#ffffff;
+      --radius:12px;
+      --max-width:1100px;
+      --glass: rgba(255,255,255,0.6);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#f7fbf9 0%, #eef6f3 100%);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:24px;
+      display:flex;
+      justify-content:center;
+      font-size:16px;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--max-width);
+      background:var(--card);
+      border-radius:18px;
+      box-shadow:0 10px 30px rgba(2,6,23,0.08);
+      overflow:hidden;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:20px 28px;
+      gap:16px;
+      background:linear-gradient(90deg, rgba(11,110,79,0.06), rgba(255,183,3,0.03));
+    }
+
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{
+      width:56px;height:56px;border-radius:10px;
+      display:grid;place-items:center;font-weight:700;color:white;
+      background:linear-gradient(135deg,var(--primary),#07624b);
+      box-shadow:0 6px 16px rgba(11,110,79,0.18);
+    }
+    .brand h1{font-size:1.05rem;margin:0}
+    .brand p{margin:0;font-size:.85rem;color:var(--muted)}
+
+    nav{display:flex;gap:12px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600}
+    nav a.cta{background:var(--primary);color:white}
+
+    main{padding:36px 28px}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:28px}
+
+    /* hero */
+    .hero{background:linear-gradient(180deg, rgba(11,110,79,0.03), rgba(255,183,3,0.02));padding:28px;border-radius:12px}
+    .hero h2{margin:0;font-size:1.6rem}
+    .hero p{color:var(--muted);margin-top:8px}
+    .hero .actions{margin-top:18px;display:flex;gap:12px}
+    button{cursor:pointer;border:0;padding:10px 14px;border-radius:10px;font-weight:700}
+    .btn-primary{background:var(--primary);color:white}
+    .btn-ghost{background:transparent;border:2px solid rgba(11,110,79,0.08);color:var(--primary)}
+
+    /* stats */
+    .stats{display:flex;gap:12px;margin-top:18px}
+    .stat{flex:1;background:var(--glass);padding:12px;border-radius:10px;text-align:center}
+    .stat h3{margin:0;font-size:1.25rem}
+    .stat p{margin:6px 0 0;color:var(--muted)}
+
+    /* right column */
+    .card{background:linear-gradient(180deg,white, #fbfff8);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+    .progress{background:#e6f2ec;border-radius:10px;height:12px;overflow:hidden}
+    .progress > i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),#ff7b00)}
+
+    /* sections */
+    section{margin-top:22px}
+    h3.section-title{margin:0 0 12px 0}
+
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .project{background:linear-gradient(180deg,#fff,#fbfffd);padding:12px;border-radius:10px}
+    .project p{margin:6px 0 0;color:var(--muted)}
+
+    footer{padding:20px 28px;background:#fcfffd;border-top:1px solid rgba(6,6,6,0.02);display:flex;justify-content:space-between;align-items:center}
+
+    /* responsive */
+    @media (max-width:960px){
+      .grid{grid-template-columns:1fr}
+      .projects{grid-template-columns:1fr}
+    }
+
+    /* visually-hidden for accessibility */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+  <div class="container" role="document">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">SDG</div>
+        <div>
+          <h1>SDG 1 — No Poverty</h1>
+          <p>End poverty in all its forms everywhere</p>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#get-involved">Get Involved</a>
+        <a href="#resources">Resources</a>
+        <a class="cta" href="#donate">Donate</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="grid">
+        <div>
+          <section class="hero" aria-labelledby="hero-title">
+            <h2 id="hero-title">Working together to end poverty</h2>
+            <p>Explore data-backed initiatives, community stories, and practical ways you can take action today to support SDG 1 — No Poverty.</p>
+
+            <div class="stats" role="list" aria-label="Key statistics">
+              <div class="stat" role="listitem">
+                <h3 id="stat-people">0</h3>
+                <p>People reached</p>
+              </div>
+              <div class="stat" role="listitem">
+                <h3 id="stat-projects">0</h3>
+                <p>Projects funded</p>
+              </div>
+              <div class="stat" role="listitem">
+                <h3 id="stat-progress">0%</h3>
+                <p>Progress toward target</p>
+              </div>
+            </div>
+
+            <div class="actions">
+              <button class="btn-primary" id="learn-more">Learn more</button>
+              <button class="btn-ghost" id="volunteer">Volunteer</button>
+            </div>
+
+          </section>
+
+          <section id="about" aria-labelledby="about-title">
+            <h3 class="section-title" id="about-title">About No Poverty (SDG 1)</h3>
+            <p>SDG 1 aims to eradicate extreme poverty for all people everywhere by a target date and reduce the proportion of men, women and children living in poverty in all its dimensions according to national definitions.</p>
+            <p>You can use this section to add context, local targets, and links to official UN pages or national reports.</p>
+          </section>
+
+          <section id="projects" aria-labelledby="projects-title">
+            <h3 class="section-title" id="projects-title">Featured Projects</h3>
+            <div class="projects">
+              <article class="project" aria-labelledby="p1">
+                <h4 id="p1">Community Savings Groups</h4>
+                <p>Local savings & loans groups that provide microcredit and financial education to vulnerable households.</p>
+              </article>
+
+              <article class="project" aria-labelledby="p2">
+                <h4 id="p2">Skills & Vocational Training</h4>
+                <p>Programs focused on employable skills, apprenticeship and job placement services.</p>
+              </article>
+
+              <article class="project" aria-labelledby="p3">
+                <h4 id="p3">Cash Transfers</h4>
+                <p>Targeted cash transfer pilots that support households during shocks and help lift families above national poverty lines.</p>
+              </article>
+
+              <article class="project" aria-labelledby="p4">
+                <h4 id="p4">Affordable Housing</h4>
+                <p>Community-driven affordable housing and slum upgrading initiatives to reduce vulnerability.</p>
+              </article>
+            </div>
+          </section>
+
+          <section id="get-involved" aria-labelledby="involve-title">
+            <h3 class="section-title" id="involve-title">Get Involved</h3>
+            <p>Volunteer, donate, partner or spread awareness. Below are sample action items you can wire to forms, APIs, or event sign-ups.</p>
+            <ul>
+              <li>Join a local project team — <a href="#">sign up</a></li>
+              <li>Organize a fundraising drive — <a href="#">learn how</a></li>
+              <li>Share a story from your community — <a href="#">submit</a></li>
+            </ul>
+          </section>
+
+        </div>
+
+        <aside class="card" aria-labelledby="aside-title">
+          <h3 id="aside-title">Quick Actions</h3>
+
+          <p style="margin-top:8px;color:var(--muted)">Current progress toward local poverty-reduction goal</p>
+          <div class="progress" aria-hidden="true" style="margin-top:10px">
+            <i id="progress-bar"></i>
+          </div>
+          <p style="margin-top:8px;color:var(--muted);font-size:.9rem"><strong id="progress-percent">0%</strong> complete</p>
+
+          <div style="margin-top:16px;display:flex;gap:8px;flex-direction:column">
+            <button class="btn-primary" id="donate">Donate</button>
+            <button class="btn-ghost" id="subscribe">Subscribe</button>
+          </div>
+
+          <div style="margin-top:18px">
+            <h4>Resources</h4>
+            <ul style="padding-left:18px;color:var(--muted);margin-top:8px">
+              <li><a href="#">UN SDG 1 Overview</a></li>
+              <li><a href="#">Country Poverty Reports</a></li>
+              <li><a href="#">Research & Data</a></li>
+            </ul>
+          </div>
+
+        </aside>
+      </div>
+
+      <section id="resources" aria-labelledby="resources-title">
+        <h3 class="section-title" id="resources-title">Data & Tools</h3>
+        <p>Embed charts, maps or datasets here. The template includes a small script for animated counters and a progress bar (client-side only).</p>
+
+        <div style="margin-top:12px;background:linear-gradient(180deg,#ffffff,#fbfff8);padding:12px;border-radius:10px">
+          <p style="margin:0;color:var(--muted)"><strong>Note:</strong> For production, connect to an API or CMS for dynamic figures and secure donation processing (never accept payments directly through static forms).</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>
+        <small>© <span id="year"></span> SDG 1 — No Poverty. Built with care for accessibility.</small>
+      </div>
+      <div>
+        <small>Made for awareness • <a href="#">Privacy</a> • <a href="#">Contact</a></small>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Simple UI behaviors & demo data for the template (client-side only)
+    (function(){
+      // Set current year
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Animated counters (demo numbers)
+      const counters = [
+        {id:'stat-people', value: 12540},
+        {id:'stat-projects', value: 48},
+        {id:'stat-progress', value: 36} // percent
+      ];
+
+      counters.forEach(c => {
+        const el = document.getElementById(c.id);
+        if(!el) return;
+        let start = 0;
+        const duration = 1200; // ms
+        const steps = 60;
+        const increment = c.value / steps;
+        const interval = duration/steps;
+        const t = setInterval(()=>{
+          start += increment;
+          if(start >= c.value){
+            clearInterval(t);
+            el.textContent = c.id.includes('progress') ? c.value + '%' : Math.round(c.value).toLocaleString();
+          } else {
+            el.textContent = c.id.includes('progress') ? Math.round(start) + '%' : Math.round(start).toLocaleString();
+          }
+        },interval);
+      });
+
+      // Progress bar
+      const percent = 36; // demo
+      const bar = document.getElementById('progress-bar');
+      const pctEl = document.getElementById('progress-percent');
+      if(bar){
+        bar.style.width = pctEl.textContent = percent + '%';
+      }
+
+      // Simple modal/donate placeholder
+      const donateBtn = document.getElementById('donate');
+      const subscribeBtn = document.getElementById('subscribe');
+      donateBtn && donateBtn.addEventListener('click', ()=>{
+        alert('Donate flow placeholder. In production, redirect to a secure payment provider (Stripe, PayPal) or a donation platform.');
+      });
+      subscribeBtn && subscribeBtn.addEventListener('click', ()=>{
+        const email = prompt('Enter your email to subscribe to updates:');
+        if(email){alert('Thanks — we will send updates to ' + email);} 
+      });
+
+      // keyboard accessibility: focus outline for keyboard users
+      function handleFirstTab(e) {
+        if (e.key === 'Tab') {
+          document.body.classList.add('user-is-tabbing');
+          window.removeEventListener('keydown', handleFirstTab);
+        }
+      }
+      window.addEventListener('keydown', handleFirstTab);
+
+    })();
+  </script>
+</body>
+</html>
